@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.purpose {
+  font-family: sans-serif;
+  font-size: 48px;
+  text-align: center;
+}
+
+.overview-description {
+  text-align: center;
+  width: 500px;
+  margin-bottom: 40px;
+}
+
+.first-description {
+  width: 400px;
+}
+
+.first-mockup-image {
+  display: inline-block;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #73f;
+  border-radius: 8px;
+}
+
+.date {
+  display: inline-block;
+  border-style: solid;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 8px;
+  padding: 4px 4px;
+}

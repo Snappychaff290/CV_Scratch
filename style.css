@@ -1,5 +1,30 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+container {
+  width: 1000px;
+}
+
+.intro-section {
+  width: 500px;
+  float: left;
+  margin-top: 250px;
+  margin-left: 100px;
+}
+
+.main {
+  font-size: 48px;
+  text-align: center;
+}
+
+.supporting-main {
+  color: #aaa;
+  text-align: center;
+}
+
+.self-img {
+  float: left;
 }
