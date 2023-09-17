@@ -5,6 +5,10 @@
   font-family: sans-serif;
 }
 
+.page-content {
+  position: relative;
+}
+
 .purpose {
   font-family: sans-serif;
   font-size: 48px;
@@ -44,6 +48,7 @@
   border-bottom: solid;
   margin-bottom: 24px;
   border-color: black;
+  padding-bottom: 5px;
 }
 
 .list-item {
