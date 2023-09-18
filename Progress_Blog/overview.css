@@ -40,9 +40,10 @@
   margin-left: 10px;
   border-radius: 8px;
   padding: 4px 4px;
+  margin-bottom: 20px;
 }
 
-.divider {
+.section {
   border-style: solid;
   border: none;
   border-bottom: solid;
