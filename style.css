@@ -7,10 +7,12 @@
 /* HEADER */
 .head-link {
   font-size: 36px;
-  color: #c7c7c7;
+  color: #ddd;
+  text-decoration: none;
 }
 .head-link:hover {
-  color: orangered;
+  /* color: #9893da; */
+  color: #9966cc;
 }
 
 #nav-bar {
@@ -24,7 +26,11 @@
   gap: 36px;
   /* position: fixed; */
   width: 100%;
-  background-color: rgb(90, 28, 151);
+  background-color: #3c3d3b;
+  border: none;
+  border-bottom: 4px solid;
+  /* border-color: #9893da; */
+  border-color: #9966cc;
 }
 /* HEADER */
 
@@ -38,14 +44,18 @@ container {
 
 /* .intro-section { */
 /* } */
+.section-1 {
+  background: #3c3d3b;
+}
 
 .main {
   font-size: 48px;
   text-align: center;
+  color: #ddd;
 }
 
 .supporting-main {
-  color: #aaa;
+  color: #888;
   text-align: center;
 }
 
