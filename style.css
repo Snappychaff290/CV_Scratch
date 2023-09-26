@@ -1,51 +1,75 @@
+/* CONSTANTS
+#3c3d3b
+#96c
+
+
+
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* HEADER */
-.head-link {
-  font-size: 36px;
-  color: #ddd;
-  text-decoration: none;
-}
-.head-link:hover {
-  /* color: #9893da; */
-  color: #9966cc;
-}
-
-#nav-bar {
+/* SIDE BAR */
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 100px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-image: linear-gradient(to right, #2c2d2b, #1c1d1b); /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  /* padding-top: 20px; */
+  /* GRID STUFFS */
   display: flex;
-  gap: 20px;
-}
-
-#header {
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 36px;
-  /* position: fixed; */
-  width: 100%;
-  background-color: #3c3d3b;
-  border: none;
-  border-bottom: 4px solid;
-  /* border-color: #9893da; */
-  border-color: #9966cc;
+  justify-content: space-between;
 }
-/* HEADER */
+
+.icon-set {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ICONS */
+.side-icon {
+  color: #96c;
+  font-size: 48px;
+}
+
+.side-icon:hover {
+  color: #74a;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/* SIDE BAR */
 
 container {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
-  height: 750px;
+  height: 480px;
+  background-color: #000;
 }
 
 /* .intro-section { */
 /* } */
 .section-1 {
-  background: #3c3d3b;
+  background: #1c1d1b;
 }
 
 .main {
