@@ -34,12 +34,22 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  gap: 36px;
 }
 
 /* ICONS */
 .side-icon {
   color: #96c;
   font-size: 48px;
+}
+
+.cv-download {
+  margin-bottom: 24px;
+}
+
+.first-icon {
+  margin-top: 24px;
 }
 
 .side-icon:hover {
