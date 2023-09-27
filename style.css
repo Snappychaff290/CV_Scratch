@@ -211,9 +211,12 @@ body {
     font-size: 24px !important;
   }
 }
-@media (hover: none) {
-  #cards {
-    grid-template-columns: 200px !important;
+@media screen and (max-width: 630px) {
+  #cards .big {
+    grid-column: span 1 !important;
+  }
+  #cards .wide {
+    grid-column: span 1 !important;
   }
 }
 
