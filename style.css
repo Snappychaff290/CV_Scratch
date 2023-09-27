@@ -1,3 +1,17 @@
+/* KEEPS
+#8e05f2
+#fbfef3 FONT COLOR
+#202020 Erie Grey
+#f6c344 Saffron
+#50FFB1 Aquamarine
+#6A66A3 Ultraviolet
+#8B85C1 Tropical Indigo
+#7A6F9B Pomp and Power
+
+
+text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
+*/
+
 */ * {
   margin: 0;
   padding: 0;
@@ -38,7 +52,8 @@
 
 /* ICONS */
 .side-icon {
-  color: #74c;
+  /* color: #74c; */
+  color: #8b85c1;
 }
 
 .cv-download {
@@ -50,12 +65,13 @@
 }
 
 .icon {
-  color: #74c;
+  /* color: #74c; */
+  color: #8b85c1;
   font-size: 48px;
 }
 
 .side-icon:hover {
-  color: #52a;
+  color: #6a66a3;
   cursor: pointer;
 }
 
