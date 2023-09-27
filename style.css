@@ -199,7 +199,7 @@ body {
   grid-row: span 2;
 }
 
-@media screen and (max-height: 1200px) {
+@media screen and (max-height: 980px) {
   #cards {
     display: grid;
     grid-gap: 24px;
