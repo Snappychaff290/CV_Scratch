@@ -16,6 +16,13 @@
 text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
 */
 
+:root {
+  --bg-color: rgb(20, 20, 20);
+  --card-color: rgb(23, 23, 23);
+  --accent-color: #f6c344;
+  --accent-hover: #ef6f6c;
+}
+
 */ * {
   margin: 0;
   padding: 0;
@@ -57,7 +64,7 @@ text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
 /* ICONS */
 .side-icon {
   /* color: #74c; */
-  color: #8b85c1;
+  color: var(--accent-color);
 }
 
 .cv-download {
@@ -70,13 +77,14 @@ text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
 
 .icon {
   /* color: #74c; */
-  color: #8b85c1;
+  color: var(--accent-color);
   font-size: 48px;
 }
 
 .side-icon:hover {
-  color: #6a66a3;
+  color: var;
   cursor: pointer;
+  color: var(--accent-hover);
 }
 
 @media screen and (max-height: 450px) {
@@ -90,11 +98,6 @@ text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
 /* SIDE BAR */
 
 /* FANCY STUFF */
-:root {
-  --bg-color: rgb(20, 20, 20);
-  --card-color: rgb(23, 23, 23);
-}
-
 body {
   background-color: var(--bg-color);
 }
@@ -104,13 +107,9 @@ body {
 
 .card {
   background-color: rgba(255, 255, 255, 0.1);
-  /* border-radius: 10px; */
-  /* cursor: pointer; */
   display: flex;
-  /* height: 260px; */
   flex-direction: column;
   position: relative;
-  /* width: 300px; */
 }
 
 .card:hover::before {
@@ -176,17 +175,15 @@ body {
   padding-left: 110px;
 }
 .card {
-  /* background-image: radial-gradient(circle, #2c2d2b, #1c1d1b); */
-  /* background: #2f2f34; */
   background: #232323;
   border-radius: 16px;
   transition: 0.5s;
 }
 .card:hover {
-  /* background-image: radial-gradient(circle, #74c, #52a); */
-  /* background: #74c; */
-  /* background-color: #2c2d2b; */
   cursor: pointer;
+  /* Expand On Hover */
+  transition: transform 0.2s ease-in-out; /* Add a transition for smooth scaling */
+  transform: scale(1.03);
 }
 #cards .wide {
   grid-column: span 2;
@@ -209,4 +206,17 @@ body {
     padding: 10px;
     padding-left: 110px;
   }
+}
+
+/* Individual Modules */
+.card-content h1 {
+  color: var(--accent-color);
+  border: #fbfef3 solid 2px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  align-self: center;
+  font-weight: bold;
+  font-size: 48px;
+  text-shadow: 0 0 50px var(--accent-hover), 0 0 10px var(--accent-hover),
+    0 0 30px var(--accent-hover);
 }
