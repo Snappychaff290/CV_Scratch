@@ -196,6 +196,7 @@ body {
   grid-row: span 2;
 }
 
+/* SMALL SCREENS */
 @media screen and (max-height: 980px) {
   #cards {
     display: grid;
@@ -205,6 +206,9 @@ body {
     grid-auto-flow: dense;
     padding: 10px;
     padding-left: 110px;
+  }
+  .card-content h1 {
+    font-size: 24px !important;
   }
 }
 
