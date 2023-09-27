@@ -197,7 +197,7 @@ body {
 }
 
 /* SMALL SCREENS */
-@media screen and (max-height: 980px) {
+@media screen and (max-height: 1100px) {
   #cards {
     display: grid;
     grid-gap: 24px;
@@ -209,6 +209,11 @@ body {
   }
   .card-content h1 {
     font-size: 24px !important;
+  }
+}
+@media (hover: none) {
+  #cards {
+    grid-template-columns: 200px !important;
   }
 }
 
