@@ -85,6 +85,8 @@ text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
   color: var;
   cursor: pointer;
   color: var(--accent-hover);
+  transition: 0.2s;
+  transform: scale(1.2);
 }
 
 @media screen and (max-height: 450px) {
