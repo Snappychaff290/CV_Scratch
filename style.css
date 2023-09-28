@@ -1,5 +1,5 @@
 /* KEEPS
-#8e05f2
+#ca80ff
 #fbfef3 FONT COLOR
 #202020 Erie Grey
 #f6c344 Saffron
@@ -28,6 +28,14 @@ text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
 .cambridge-icon {
   color: #7fb685;
   text-shadow: 0 0 1px #7fb685, 0 0 1px #7fb685, 0 0 3px #7fb685;
+}
+.ultraviolet-icon {
+  color: #ca80ff;
+  text-shadow: 0 0 5px #6a66a3, 0 0 5px #6a66a3, 0 0 5px #6a66a3;
+}
+.tomato-icon {
+  color: #f95738;
+  text-shadow: 0 0 2px #ef6f6c, 0 0 10px #ef6f6c, 0 0 2px #ef6f6c;
 }
 
 :root {
@@ -233,7 +241,8 @@ body {
 }
 .education h1,
 .blockchain h1,
-.development h1 {
+.development h1,
+.AI h1 {
   /* color: var(--accent-color); */
   color: #e6e6e6;
   /* border: #fbfef3 solid 2px; */
@@ -242,9 +251,10 @@ body {
   margin-block-end: 0;
   border-radius: 8px;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 40px;
   text-shadow: 0 0 5px #cacaca, 0 0 1px #cacaca, 0 0 5px #cacaca;
 }
+
 .blockchain .blockchain-alternate {
   color: #949494;
   font-size: 14px;
@@ -253,14 +263,16 @@ body {
   width: 80%;
 }
 .education p,
-.blockchain .blockchain-default {
+.blockchain .blockchain-default,
+.AI p {
   color: #949494;
   font-size: 24px;
   display: inline-block;
   margin-left: 32px;
   width: 80%;
 }
-.blockchain {
+.blockchain,
+.AI {
   display: flex;
   flex-direction: column;
   flex-grow: 1;

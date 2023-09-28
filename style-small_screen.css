@@ -14,7 +14,7 @@
   }
   .card-content .icon-big {
     margin-top: 14px;
-    font-size: 48px;
+    font-size: 44px;
   }
 
   .education p,
@@ -70,4 +70,15 @@
     display: flex;
     flex-direction: column;
   }
+}
+/* AI */
+.AI h1 {
+  text-overflow: clip;
+  white-space: nowrap;
+}
+.AI p {
+  font-size: 16px;
+  margin-left: 16px;
+  width: 90%;
+  margin-top: 0;
 }
