@@ -7,17 +7,23 @@
   }
   .card-content .icon-big {
     margin-top: 14px;
-    font-size: 36px;
+    font-size: 28px;
+  }
+  .el--2 {
+    grid-row: span 2;
   }
   .development {
     display: flex;
     flex-direction: column;
     column-gap: 5%;
   }
+  .development-grid {
+    margin-top: 0;
+  }
   .development-grid .history {
-    display: none;
+    display: inline-block;
   }
   .development-grid .favorites {
-    display: none;
+    display: inline-block;
   }
 }
