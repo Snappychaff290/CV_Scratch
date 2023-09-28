@@ -264,7 +264,7 @@ body {
 }
 .education p,
 .blockchain .blockchain-default,
-.AI .AI-description {
+.AI p {
   color: #949494;
   font-size: 24px;
   display: inline-block;
@@ -311,3 +311,4 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+/* AI */
