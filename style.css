@@ -16,6 +16,16 @@
 text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
 */
 
+.saffron-icon {
+  color: #ffe59f;
+  text-shadow: 0 0 10px var(--accent-hover), 0 0 5px var(--accent-hover),
+    0 0 10px var(--accent-hover);
+}
+.aquamarine-icon {
+  color: #50ffb1;
+  text-shadow: 0 0 5px #7fb685, 0 0 5px #7fb685, 0 0 5px #7fb685;
+}
+
 :root {
   --bg-color: rgb(20, 20, 20);
   --card-color: rgb(23, 23, 23);
@@ -24,8 +34,8 @@ text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
 }
 
 */ * {
-  margin: 0;
-  padding: 0;
+  margin: none;
+  padding: none;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fbfef3;
@@ -223,31 +233,31 @@ body {
 }
 
 /* Individual Modules */
-.card-content i {
+/* EDUCATION */
+.card-content .icon-big {
   color: #ffe59f;
   margin-top: 24px;
-  align-self: center;
   font-size: 96px;
   text-shadow: 0 0 10px var(--accent-hover), 0 0 5px var(--accent-hover),
     0 0 10px var(--accent-hover);
 }
-.card-content {
+.education {
   color: #ffe59f;
 }
-.card-content h1 {
+.card-content .centered {
+  align-self: center;
+}
+.education h1 {
   /* color: var(--accent-color); */
   color: #e6e6e6;
   /* border: #fbfef3 solid 2px; */
   padding: 6px 12px;
   border-radius: 8px;
-  align-self: center;
   font-weight: bold;
   font-size: 48px;
-  /* text-shadow: 0 0 50px var(--accent-hover), 0 0 10px var(--accent-hover), */
-  /* 0 0 30px var(--accent-hover); */
   text-shadow: 0 0 5px #cacaca, 0 0 1px #cacaca, 0 0 5px #cacaca;
 }
-.card-content p {
+.education p {
   color: #949494;
   font-size: 24px;
   display: inline-block;
@@ -255,4 +265,39 @@ body {
   /* align-self: center; */
   /* text-align: center; */
   width: 80%;
+}
+
+/* INTERESTS */
+.interest-section {
+  display: flex;
+  margin-top: 8px;
+  justify-items: space-between;
+  gap: 36px;
+}
+.interest-title {
+  min-width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.interest-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+}
+.icon-interest {
+  font-size: 36px;
+}
+.interest-title h1 {
+  color: #e6e6e6;
+  text-shadow: 0 0 5px #cacaca, 0 0 1px #cacaca, 0 0 5px #cacaca;
+}
+.interest-header {
+  color: #e6e6e6;
+}
+.interest-description {
+  color: #949494;
 }
