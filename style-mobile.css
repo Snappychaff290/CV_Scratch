@@ -21,9 +21,9 @@
     margin-top: 0;
   }
   .development-grid .history {
-    display: inline-block;
+    /* display: inline-block; */
   }
   .development-grid .favorites {
-    display: inline-block;
+    /* display: inline-block; */
   }
 }
