@@ -5,4 +5,19 @@
   #cards .wide {
     grid-column: span 1 !important;
   }
+  .card-content .icon-big {
+    margin-top: 14px;
+    font-size: 36px;
+  }
+  .development {
+    display: flex;
+    flex-direction: column;
+    column-gap: 5%;
+  }
+  .development-grid .history {
+    display: none;
+  }
+  .development-grid .favorites {
+    display: none;
+  }
 }
