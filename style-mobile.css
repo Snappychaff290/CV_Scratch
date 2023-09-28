@@ -1,0 +1,8 @@
+@media screen and (max-width: 630px) {
+  #cards .big {
+    grid-column: span 1 !important;
+  }
+  #cards .wide {
+    grid-column: span 1 !important;
+  }
+}
