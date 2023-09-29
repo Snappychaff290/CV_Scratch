@@ -74,8 +74,8 @@ text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
 }
 .red-icon {
   color: rgb(194, 0, 97);
-  text-shadow: 0 0 5px rgb(160, 0, 80), 0 0 10px rgb(160, 0, 80),
-    0 0 8px rgb(160, 0, 80);
+  text-shadow: 0 0 1px rgb(160, 0, 80), 0 0 5px rgb(160, 0, 80),
+    0 0 2px rgb(160, 0, 80);
 }
 .white-icon {
   color: #ffffff;
@@ -116,10 +116,10 @@ text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
   top: 0; /* Stay at the top */
   left: 0;
   /* background-image: linear-gradient(to right, #2c2d2b, #1c1d1b); Black */
-  /* background: #202024; */
+  background: #202024;
   /* background: linear-gradient(to right, #202024, #ffffff) */
-  box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
-    inset 2px 2px 6px rgba(0, 0, 0, 0.5);
+  /* box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.5); */
   overflow-x: hidden; /* Disable horizontal scroll */
   /* GRID STUFFS */
   display: flex;
@@ -142,11 +142,6 @@ text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
 .cv-download {
   margin-bottom: 24px;
 }
-
-.first-icon {
-  margin-top: 24px;
-}
-
 .icon {
   /* color: #74c; */
   /* color: var(--accent-color); */
