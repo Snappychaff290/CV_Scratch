@@ -77,6 +77,14 @@ text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
   text-shadow: 0 0 1px rgb(160, 0, 80), 0 0 5px rgb(160, 0, 80),
     0 0 2px rgb(160, 0, 80);
 }
+.instagram-glow {
+  text-shadow: -2px -2px 5px #0084ffc5, 2px -2px 5px #f700ff,
+    2px 2px 5px #ff0040, -2px 2px 5px #ffc400;
+}
+.glitch-glow {
+  text-shadow: -2px -2px 0 #ff0000, 2px -2px 0 #00ff15, 2px 2px 0 #3700ff,
+    -2px 2px 0 #d33f6a;
+}
 .white-icon {
   color: #ffffff;
 }
@@ -116,10 +124,10 @@ text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
   top: 0; /* Stay at the top */
   left: 0;
   /* background-image: linear-gradient(to right, #2c2d2b, #1c1d1b); Black */
-  background: #202024;
+  /* background: #202024; */
   /* background: linear-gradient(to right, #202024, #ffffff) */
-  /* box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
-    inset 2px 2px 6px rgba(0, 0, 0, 0.5); */
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 0.5);
   overflow-x: hidden; /* Disable horizontal scroll */
   /* GRID STUFFS */
   display: flex;

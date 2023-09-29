@@ -9,7 +9,7 @@
     margin-top: 14px;
     font-size: 28px;
   }
-  .el--2 {
+  .wide {
     grid-row: span 2;
   }
   .development,
