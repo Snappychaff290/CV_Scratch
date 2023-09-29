@@ -12,12 +12,16 @@
   .el--2 {
     grid-row: span 2;
   }
-  .development {
+  .development,
+  .hobbies,
+  .persuits {
     display: flex;
     flex-direction: column;
     column-gap: 5%;
   }
-  .development-grid {
+  .development-grid,
+  .hobby-grid,
+  .persuit-grid {
     margin-top: 0;
   }
 }

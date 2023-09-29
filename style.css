@@ -15,19 +15,27 @@
 
 text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
 */
-
 .saffron-icon {
   color: #ffe59f;
   text-shadow: 0 0 10px var(--accent-hover), 0 0 5px var(--accent-hover),
     0 0 10px var(--accent-hover);
 }
+.saffron-glow {
+  text-shadow: 0 0 10px #f34643, 0 0 5px #f34643, 0 0 10px #f34643;
+}
 .aquamarine-icon {
   color: #50ffb1;
   text-shadow: 0 0 5px #7fb685, 0 0 5px #7fb685, 0 0 5px #7fb685;
 }
+.aquamarine-glow {
+  text-shadow: 0 0 5px #38b947, 0 0 5px #38b947, 0 0 5px #38b947;
+}
 .cambridge-icon {
   color: #7fb685;
   text-shadow: 0 0 1px #7fb685, 0 0 1px #7fb685, 0 0 3px #7fb685;
+}
+.cambridge-glow {
+  text-shadow: 0 0 3px #7fb685, 0 0 1px #7fb685, 0 0 5px #7fb685;
 }
 .ultraviolet-icon {
   color: #ca80ff;
@@ -37,10 +45,50 @@ text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
   color: #f95738;
   text-shadow: 0 0 2px #ef6f6c, 0 0 10px #ef6f6c, 0 0 2px #ef6f6c;
 }
+.tomato-glow {
+  text-shadow: 0 0 2px #ef6f6c, 0 0 10px #ef6f6c, 0 0 2px #ef6f6c;
+  text-shadow: -1px -1px 6px rgba(255, 255, 255, 0.1),
+    2px 2px 10px rgba(0, 0, 0, 0.5);
+}
 .blue-icon {
   color: #53b1ff;
   text-shadow: 0 0 2px rgb(67, 142, 255), 0 0 10px rgb(67, 142, 255),
     0 0 2px rgb(67, 142, 255);
+}
+.blue-glow {
+  text-shadow: 0 0 5px rgb(67, 142, 255), 0 0 10px rgb(67, 142, 255),
+    0 0 5px rgb(67, 142, 255);
+}
+.yellow-icon {
+  color: #ffeb7d;
+  text-shadow: 0 0 5px #b49d18, 0 0 10px #b49d18, 0 0 8px #b49d18;
+}
+.dark-yellow-icon {
+  color: #dfcb5d;
+  text-shadow: 0 0 5px #b49d18, 0 0 10px #b49d18, 0 0 8px #b49d18;
+}
+.magenta-icon {
+  color: rgb(255, 0, 128);
+  text-shadow: 0 0 5px rgb(160, 0, 80), 0 0 10px rgb(160, 0, 80),
+    0 0 8px rgb(160, 0, 80);
+}
+.red-icon {
+  color: rgb(194, 0, 97);
+  text-shadow: 0 0 5px rgb(160, 0, 80), 0 0 10px rgb(160, 0, 80),
+    0 0 8px rgb(160, 0, 80);
+}
+.white-icon {
+  color: #ffffff;
+}
+.white-glow {
+  text-shadow: 0 0 5px #949494, 0 0 10px #acacac, 0 0 8px #a5a5a5;
+}
+.purple-glow {
+  text-shadow: 0 0 5px #a200ff, 0 0 10px #a200ff, 0 0 8px #a200ff;
+}
+.test-icon {
+  text-shadow: -1px -1px 6px rgba(255, 255, 255, 0.1),
+    2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 :root {
@@ -68,9 +116,11 @@ text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
   top: 0; /* Stay at the top */
   left: 0;
   /* background-image: linear-gradient(to right, #2c2d2b, #1c1d1b); Black */
-  background: #202024;
+  /* background: #202024; */
+  /* background: linear-gradient(to right, #202024, #ffffff) */
+  box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.5);
   overflow-x: hidden; /* Disable horizontal scroll */
-  /* padding-top: 20px; */
   /* GRID STUFFS */
   display: flex;
   flex-direction: column;
@@ -89,11 +139,6 @@ text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
 }
 
 /* ICONS */
-.side-icon {
-  /* color: #74c; */
-  color: var(--accent-color);
-}
-
 .cv-download {
   margin-bottom: 24px;
 }
@@ -104,13 +149,13 @@ text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
 
 .icon {
   /* color: #74c; */
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
   font-size: 48px;
 }
 
 .side-icon:hover {
   cursor: pointer;
-  color: var(--accent-hover);
+  /* color: var(--accent-hover); */
   transition: 0.2s;
   transform: scale(1.2);
 }
@@ -229,6 +274,11 @@ body {
   align-self: center;
 }
 /* EDUCATION // BLOCKCHAIN */
+.bg-icon {
+  align-self: center;
+  opacity: 0.8;
+  margin-top: 20%;
+}
 .card-content .icon-big {
   margin-top: 24px;
   font-size: 96px;
@@ -246,8 +296,10 @@ body {
 .education h1,
 .blockchain h1,
 .development h1,
+.hobbies h1,
 .AI h1,
-.web-dev h1 {
+.web-dev h1,
+.persuits h1 {
   /* color: var(--accent-color); */
   color: #e6e6e6;
   /* border: #fbfef3 solid 2px; */
@@ -285,19 +337,25 @@ body {
 }
 
 /* DEVELOPMENT */
-.development p {
+.development p,
+.hobbies p,
+.persuits p {
   color: #949494;
   font-size: 18px;
   display: inline-block;
 }
-.development h2 {
+.development h2,
+.hobbies h2,
+.persuits h2 {
   color: #e6e6e6;
   font-size: 24px;
   font-weight: bold;
   margin-block-start: 0;
   margin-block-end: 0;
 }
-.development {
+.development,
+.hobbies,
+.persuits {
   display: flex;
   flex-direction: row;
   gap: 5%;
@@ -311,7 +369,9 @@ body {
   display: flex;
   flex-direction: column;
 }
-.development .development-grid {
+.development .development-grid,
+.hobbies .hobby-grid,
+.persuits .persuit-grid {
   display: grid;
   column-gap: 5%;
   grid-template-columns: 1fr 1fr;

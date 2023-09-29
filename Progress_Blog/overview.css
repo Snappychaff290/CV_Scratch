@@ -19,6 +19,19 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.go-back {
+  align-self: center;
+  justify-self: center;
+  font-size: 128px;
+  color: white;
+  text-shadow: 0 0 5px #b49d18, 0 0 10px #b49d18, 0 0 8px #b49d18;
+}
+.back-header {
+  color: #ffffff;
+  align-self: center;
+  text-shadow: 0 0 2px #a8a8a8, 0 0 8px #c2c2c2, 0 0 4px #cecece;
+}
+
 #cards {
   display: flex;
   justify-content: flex-start;
