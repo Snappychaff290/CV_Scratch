@@ -154,3 +154,17 @@ body {
 .bottom {
   margin-top: 60%;
 }
+.fourth-image {
+  background-image: url("../Progress_Blog/progress_pics/landing-page-2.PNG");
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-size: 100% auto;
+  background-position: bottom;
+}
+.fifth-image {
+  background-image: url("../Progress_Blog/progress_pics/landing-page-2.PNG");
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-size: 100% auto;
+  background-position: bottom;
+}
