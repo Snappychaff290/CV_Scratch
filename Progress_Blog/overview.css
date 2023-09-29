@@ -130,3 +130,10 @@ body {
 .description {
   text-align: justify;
 }
+.first-image {
+  background-image: url("../Progress_Blog/progress_pics/First-page-bad.png");
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-size: 100% auto;
+  background-position: center;
+}
