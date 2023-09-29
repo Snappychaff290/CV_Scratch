@@ -1,9 +1,5 @@
 /* SMALL SCREENS */
-<<<<<<< HEAD
-@media screen and (max-height: 1600px) {
-=======
 @media screen and (max-width: 15in) {
->>>>>>> c5bdef6354500aa3968eca7c9eba694d512f7a64
   #cards {
     display: grid;
     grid-gap: 24px;

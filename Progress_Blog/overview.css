@@ -135,5 +135,22 @@ body {
   background-repeat: no-repeat;
   opacity: 0.8;
   background-size: 100% auto;
-  background-position: center;
+  background-position: bottom;
+}
+.second-image {
+  background-image: url("../Progress_Blog/progress_pics/landing-page-1.PNG");
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-size: 100% auto;
+  background-position: bottom;
+}
+.third-image {
+  background-image: url("../Progress_Blog/progress_pics/landing-page-2.PNG");
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-size: 100% auto;
+  background-position: top;
+}
+.bottom {
+  margin-top: 60%;
 }
