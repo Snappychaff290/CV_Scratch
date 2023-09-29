@@ -168,3 +168,7 @@ body {
   background-size: 100% auto;
   background-position: bottom;
 }
+.card-content img {
+  opacity: 0.8;
+  size: 100% auto;
+}
