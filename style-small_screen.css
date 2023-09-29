@@ -1,5 +1,5 @@
 /* SMALL SCREENS */
-@media screen and (max-height: 2400px) {
+@media screen and (max-height: 22200px) {
   #cards {
     display: grid;
     grid-gap: 24px;
