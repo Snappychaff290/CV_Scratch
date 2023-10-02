@@ -77,6 +77,10 @@ text-shadow: 0 0 5px #ffffff, 0 0 20px #000, 0 0 30px #000;
   text-shadow: 0 0 1px rgb(160, 0, 80), 0 0 5px rgb(160, 0, 80),
     0 0 2px rgb(160, 0, 80);
 }
+.red-glow {
+  text-shadow: 0 0 4px rgb(160, 0, 80), 0 0 5px rgb(160, 0, 80),
+    0 0 8px rgb(160, 0, 80);
+}
 .instagram-glow {
   text-shadow: -2px -2px 5px #0084ffc5, 2px -2px 5px #f700ff,
     2px 2px 5px #ff0040, -2px 2px 5px #ffc400;
