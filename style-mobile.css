@@ -27,4 +27,11 @@
   .name h2 {
     font-size: 10px;
   }
+  .selfie {
+    /* BACKGROUND STUFFS */
+    background-image: url("/img/Selfie_3-removebg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 110% auto;
+  }
 }
