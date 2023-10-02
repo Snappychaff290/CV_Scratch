@@ -431,6 +431,9 @@ body {
   flex-direction: column;
   margin-bottom: 2%;
 }
+.name h1 {
+  font-size: 48px;
+}
 .name h1,
 .name h2 {
   align-self: center;
