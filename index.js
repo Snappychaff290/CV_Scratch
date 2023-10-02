@@ -29,6 +29,8 @@ container.addEventListener("mouseover", () => {
       .map((letter, index) => {
         if (index < iteration) {
           return `<span class="aquamarine-glow">${glitchElement.dataset.value[index]}</span>`;
+        } else if (index == 8) {
+          return " ";
         }
         return letters[Math.floor(Math.random() * 26)];
       })
