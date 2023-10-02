@@ -24,4 +24,7 @@
   .persuit-grid {
     margin-top: 0;
   }
+  .name h2 {
+    font-size: 10px;
+  }
 }
