@@ -19,6 +19,14 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.aquamarine-glow {
+  text-shadow: 0 0 5px #38b947, 0 0 5px #38b947, 0 0 5px #38b947;
+}
+.red-glow {
+  text-shadow: 0 0 4px rgb(160, 0, 80), 0 0 5px rgb(160, 0, 80),
+    0 0 8px rgb(160, 0, 80);
+}
+
 .go-back {
   align-self: center;
   justify-self: center;
@@ -130,44 +138,7 @@ body {
 .description {
   text-align: justify;
 }
-.first-image {
-  background-image: url("../Progress_Blog/progress_pics/First-page-bad.png");
-  background-repeat: no-repeat;
-  opacity: 0.8;
-  background-size: 100% auto;
-  background-position: bottom;
-}
-.second-image {
-  background-image: url("../Progress_Blog/progress_pics/landing-page-1.PNG");
-  background-repeat: no-repeat;
-  opacity: 0.8;
-  background-size: 100% auto;
-  background-position: bottom;
-}
-.third-image {
-  background-image: url("../Progress_Blog/progress_pics/landing-page-2.PNG");
-  background-repeat: no-repeat;
-  opacity: 0.8;
-  background-size: 100% auto;
-  background-position: top;
-}
-.bottom {
-  margin-top: 60%;
-}
-.fourth-image {
-  background-image: url("../Progress_Blog/progress_pics/landing-page-2.PNG");
-  background-repeat: no-repeat;
-  opacity: 0.8;
-  background-size: 100% auto;
-  background-position: bottom;
-}
-.fifth-image {
-  background-image: url("../Progress_Blog/progress_pics/landing-page-2.PNG");
-  background-repeat: no-repeat;
-  opacity: 0.8;
-  background-size: 100% auto;
-  background-position: bottom;
-}
+
 .card-content img {
   opacity: 0.8;
   size: 100% auto;
