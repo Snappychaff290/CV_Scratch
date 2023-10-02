@@ -32,6 +32,6 @@
     background-image: url("/img/Selfie_3-removebg.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 110% auto;
+    background-size: 110% auto !important;
   }
 }
