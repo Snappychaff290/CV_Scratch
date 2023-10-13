@@ -1,6 +1,8 @@
+const fetch = require("cross-fetch");
 const express = require("express");
 const cors = require("cors");
-import fetch from "cross-fetch";
+
+// Rest of your code remains the same
 
 const app = express();
 const port = 3000;
