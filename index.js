@@ -28,6 +28,8 @@ function toggleChat() {
   }
 }
 
+const serverURL = "http://104.230.97.51:25569/ask-question";
+
 async function changeText() {
   try {
     var filePath = "info.txt"; // Update with the path to your .txt file
@@ -36,7 +38,7 @@ async function changeText() {
     var paragraph = document.getElementById("answer");
     paragraph.innerHTML = "Loading..."; // Notify the user that the request is being processed
 
-    const response = await fetch("104.230.97.51:25569/ask-question", {
+    const response = await fetch(serverURL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
