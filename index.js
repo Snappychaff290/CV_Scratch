@@ -28,7 +28,7 @@ function toggleChat() {
   }
 }
 
-const serverURL = "https://104.230.97.51:25569/ask-question";
+const serverURL = "https://nicholas-graham.com:25569/ask-question";
 
 async function changeText() {
   try {
