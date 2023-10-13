@@ -8,6 +8,21 @@ document.getElementById("cards").onmousemove = (e) => {
   }
 };
 
+// CHATBOT
+function toggleChat() {
+  var chatPopup = document.getElementById("chat");
+  var chatContainer = document.getElementById("chat-popup");
+
+  if (chatPopup.style.display === "block") {
+    chatPopup.style.display = "none";
+    chatContainer.style.display = "block";
+  } else {
+    chatPopup.style.display = "block";
+    chatContainer.style.display = "none"; // Adjust the height as needed
+  }
+}
+// CHATBOT
+
 // const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
