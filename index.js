@@ -36,7 +36,7 @@ async function changeText() {
     var paragraph = document.getElementById("answer");
     paragraph.innerHTML = "Loading..."; // Notify the user that the request is being processed
 
-    const response = await fetch("104.230.97.51/ask-question", {
+    const response = await fetch("104.230.97.51:25569/ask-question", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
