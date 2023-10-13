@@ -21,6 +21,11 @@ function toggleChat() {
     chatContainer.style.display = "none"; // Adjust the height as needed
   }
 }
+
+function changeText() {
+  var paragraph = document.getElementById("answer");
+  paragraph.innerHTML = "New text after button click.";
+}
 // CHATBOT
 
 // const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
