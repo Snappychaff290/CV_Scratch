@@ -1,8 +1,6 @@
 const express = require("express");
 const cors = require("cors");
 const fetch = require("node-fetch");
-const http = require("http");
-
 const app = express();
 const port = 3000;
 
@@ -14,7 +12,7 @@ app.use(
 );
 
 app.post("/ask-question", async (req, res) => {
-  const { question } = req.body; // Extract the question parameter from the request body
+  const { question } = req.body;
   const apiKey = "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"; // Replace with your actual API key
   const url = "https://api.openai.com/v1/chat/completions";
   const headers = {
