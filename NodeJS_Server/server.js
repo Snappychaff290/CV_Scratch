@@ -1,18 +1,15 @@
-const express = require("express");
-const cors = require("cors");
-const fetch = require("node-fetch");
+import express from "express";
+import cors from "cors";
+import fetch from "node-fetch";
+
 const app = express();
 const port = 3000;
 
 app.use(express.json());
-app.use(
-  cors({
-    origin: "http://104.230.97.51:25570", // Replace with the actual origin of your client
-  })
-);
+app.use(cors()); // Enable CORS for all routes
 
 app.post("/ask-question", async (req, res) => {
-  const { question } = req.body;
+  const { question } = req.body; // Extract the question parameter from the request body
   const apiKey = "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"; // Replace with your actual API key
   const url = "https://api.openai.com/v1/chat/completions";
   const headers = {
