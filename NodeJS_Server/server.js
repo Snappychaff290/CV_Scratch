@@ -1,14 +1,15 @@
-const fetch = require("cross-fetch");
 const express = require("express");
 const cors = require("cors");
-
-// Rest of your code remains the same
-
+const fetch = require("node-fetch");
 const app = express();
 const port = 3000;
 
 app.use(express.json());
-app.use(cors()); // Enable CORS for all routes
+app.use(
+  cors({
+    origin: "http://104.230.97.51:25570", // Replace with the actual origin of your client
+  })
+);
 
 app.post("/ask-question", async (req, res) => {
   const { question } = req.body; // Extract the question parameter from the request body
