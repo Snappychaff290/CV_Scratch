@@ -5,14 +5,14 @@ const cors = require("cors");
 // Rest of your code remains the same
 
 const app = express();
-const port = 25569;
+const port = 3000;
 
 app.use(express.json());
 app.use(cors()); // Enable CORS for all routes
 
 app.post("/ask-question", async (req, res) => {
   const { question } = req.body; // Extract the question parameter from the request body
-  const apiKey = "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"; // Replace with your actual API key
+  const apiKey = "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"; // Replace with your actual API key
   const url = "https://api.openai.com/v1/chat/completions";
   const headers = {
     "Content-Type": "application/json",
