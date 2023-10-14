@@ -29,7 +29,7 @@ function toggleChat() {
 }
 
 // const serverURL = "https://nicholas-graham.com:25569/ask-question";
-const serverURL = "http://127.0.0.1:3000/ask-question";
+const serverURL = "http://localhost:3000/ask-question";
 
 async function changeText() {
   try {
