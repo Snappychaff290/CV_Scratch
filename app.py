@@ -3,11 +3,14 @@
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 import openai
+from dotenv import load_dotenv
+import os
 
 app = Flask(__name__)
+load_dotenv()
 CORS(app)  # Enable CORS for all routes
 
-openai.api_key = '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'
+openai_api_key = os.getenv('OPENAI_API_KEY')
 
 def read_text_from_file(filename):
     with open(filename, 'r', encoding='utf-8') as file:

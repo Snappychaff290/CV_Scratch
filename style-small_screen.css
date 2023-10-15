@@ -96,4 +96,25 @@
     width: 95%;
     margin-top: 0;
   }
+  /* AICHAT */
+  .submit-icon {
+    font-size: 28px;
+    padding: 6px;
+    border: solid #323232 2px;
+  }
+  .chat-input {
+    font-size: 24px;
+    height: 60px;
+  }
+  .answer-box h1 {
+    font-size: 22px;
+    white-space: wrap;
+    text-align: center;
+    z-index: 1;
+  }
+  .answer-box p {
+    color: #949494;
+    font-size: 20px;
+    white-space: pre-wrap;
+  }
 }
