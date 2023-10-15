@@ -7,7 +7,7 @@ import openai
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 def read_text_from_file(filename):
     with open(filename, 'r', encoding='utf-8') as file:

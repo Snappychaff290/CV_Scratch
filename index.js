@@ -29,6 +29,7 @@ function toggleChat() {
 }
 
 function submitForm() {
+  document.getElementById("answer").innerText = "Loading...";
   var userInput = document.getElementById("user-input").value;
   fetch("http://localhost:5000/get_response", {
     method: "POST",
