@@ -97,6 +97,18 @@
     margin-top: 0;
   }
   /* AICHAT */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 85%;
+    height: 90%;
+    background: #232323;
+    border: solid 2px #323232;
+    border-radius: 32px;
+    z-index: 99999;
+  }
   .chat-exit {
     font-size: 48px;
   }
