@@ -617,7 +617,7 @@ body {
   text-shadow: 0 0 5px #cacaca, 0 0 1px #cacaca, 0 0 5px #cacaca;
   white-space: nowrap;
 }
-.answer-box pre {
+.answer-box p {
   color: #949494;
   font-size: 20px;
   white-space: pre-wrap;

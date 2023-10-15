@@ -28,41 +28,22 @@ function toggleChat() {
   }
 }
 
-// const serverURL = "https://nicholas-graham.com:25569/ask-question";
-const serverURL = "https://104.230.97.51:25569/ask-question";
-
-async function changeText() {
-  try {
-    var filePath = "info.txt"; // Update with the path to your .txt file
-    var text = await fetchTextFile(filePath);
-    var question = text + document.getElementById("user-input").value;
-    var paragraph = document.getElementById("answer");
-    paragraph.innerHTML = "Loading..."; // Notify the user that the request is being processed
-
-    const response = await fetch(serverURL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ question, model: "gpt-3.5-turbo" }), // Include the model parameter
+function submitForm() {
+  var userInput = document.getElementById("user-input").value;
+  fetch("http://localhost:5000/get_response", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ user_input: userInput }),
+  })
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("answer").innerText = data;
+    })
+    .catch((error) => {
+      console.error("Error:", error);
     });
-
-    if (!response.ok) {
-      console.log(response);
-      console.log(response);
-      console.log(response);
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-
-    const result = await response.json();
-    console.log(result); // Log the result object to the console
-    const answer = result.choices[0].message.content;
-
-    paragraph.innerHTML = answer; // Display the extracted text
-  } catch (error) {
-    console.error("Error:", error);
-    paragraph.innerHTML = "An error occurred. Please try again later."; // Display an error message
-  }
 }
 
 // CHATBOT
