@@ -34,4 +34,26 @@
     background-position: center center;
     background-size: 110% auto !important;
   }
+
+  /* AICHAT */
+
+  .chat-exit {
+    font-size: 32px;
+  }
+  .chat-input {
+    font-size: 20px;
+    height: 60px;
+  }
+  .answer-box h1 {
+    padding: 2px 4px;
+    font-size: 18px;
+    white-space: wrap;
+    text-align: center;
+    z-index: 1;
+  }
+  .answer-box p {
+    color: #949494;
+    font-size: 16px;
+    white-space: pre-wrap;
+  }
 }

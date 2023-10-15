@@ -615,7 +615,7 @@ body {
   font-weight: bold;
   font-size: 32px;
   text-shadow: 0 0 5px #cacaca, 0 0 1px #cacaca, 0 0 5px #cacaca;
-  white-space: nowrap;
+  white-space: wrap;
 }
 .answer-box p {
   color: #949494;

@@ -97,6 +97,9 @@
     margin-top: 0;
   }
   /* AICHAT */
+  .chat-exit {
+    font-size: 48px;
+  }
   .submit-icon {
     font-size: 28px;
     padding: 6px;
