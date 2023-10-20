@@ -11,12 +11,7 @@ load_dotenv()
 CORS(app)  # Enable CORS for all routes
 
 openai_api_key = os.getenv('OPENAI_API_KEY')
-
-def read_text_from_file(filename):
-    with open(filename, 'r', encoding='utf-8') as file:
-        return file.read()
-
-
+from info import info
 
 @app.route('/')
 def index():
@@ -29,12 +24,9 @@ def overview():
 @app.route('/get_response', methods=['POST'])
 def get_response():
     user_input = request.json['user_input']
-
-    # Read the context from a text file
-    context = read_text_from_file('info.txt')
     
     messages = [
-        {"role": "system", "content": "You are an AI assistant answering questions about Nicholas Graham, here is useful information about him:" + context},
+        {"role": "system", "content": "You are an AI assistant answering questions about Nicholas Graham, here is useful information about him:" + info},
         {"role": "user", "content": user_input}
     ]
 
