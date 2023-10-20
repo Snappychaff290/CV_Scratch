@@ -423,7 +423,7 @@ body {
 /* Self */
 .selfie {
   /* BACKGROUND STUFFS */
-  background-image: url("/img/Selfie_3-removebg.png");
+  background-image: url("../img/Selfie_3-removebg.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 60% auto;

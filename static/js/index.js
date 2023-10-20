@@ -31,7 +31,8 @@ function toggleChat() {
 function submitForm() {
   document.getElementById("answer").innerText = "Loading...";
   var userInput = document.getElementById("user-input").value;
-  fetch("http://localhost:5000/get_response", {
+  console.log(window.location.href);
+  fetch(window.location.href + "get_response", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

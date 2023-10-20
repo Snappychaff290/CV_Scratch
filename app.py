@@ -22,6 +22,10 @@ def read_text_from_file(filename):
 def index():
     return render_template('index.html')
 
+@app.route('/overview')
+def overview():
+    return render_template('overview.html')
+
 @app.route('/get_response', methods=['POST'])
 def get_response():
     user_input = request.json['user_input']
