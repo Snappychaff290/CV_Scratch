@@ -7,7 +7,8 @@ from dotenv import load_dotenv
 import os
 
 app = Flask(__name__)
-load_dotenv()
+dotenv_path = '/var/www/html/nicholas_graham/.env'  # Specify your .env file path here
+load_dotenv(dotenv_path)
 CORS(app)  # Enable CORS for all routes
 
 openai_api_key = os.getenv('OPENAI_API_KEY')
