@@ -1,4 +1,3 @@
-info = """
 
 NICHOLAS GRAHAM
 Creston, OH | 330-435-4565 | nagraha@bgsu.edu | www.nicholas-graham.com
@@ -125,4 +124,3 @@ EXTRA CURRICULAR & VOLUNTEER ACTIVITIES
 •	Trombone player, Concert Band							Fall 2018-Spring 2019
 •	Coach & Counselor, Church Youth Soccer Camp   	                                  		2017-2019 
 •	Counselor, Creston Summer Kids Club                         					2016-2019
-"""
