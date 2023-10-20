@@ -41,6 +41,7 @@ def get_response():
     ]
 
     # Call the OpenAI GPT-3 API with the chat endpoint
+    openai.api_key = openai_api_key
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=messages,
