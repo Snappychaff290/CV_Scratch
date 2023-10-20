@@ -12,6 +12,7 @@ load_dotenv(dotenv_path)
 CORS(app)  # Enable CORS for all routes
 
 openai_api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = openai_api_key
 
 def read_text_from_file(filename):
     with open(filename, 'r', encoding='utf-8') as file:
