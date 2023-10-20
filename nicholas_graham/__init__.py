@@ -31,7 +31,7 @@ def get_response():
     user_input = request.json['user_input']
 
     # Read the context from a text file
-    context = read_text_from_file("/static/files/info.txt")
+    context = read_text_from_file("/var/www/html/nicholas_graham/static/files/info.txt")
     
     messages = [
         {"role": "system", "content": "You are an AI assistant answering questions about Nicholas Graham, here is useful information about him:" + context},
