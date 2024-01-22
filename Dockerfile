@@ -10,11 +10,16 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Install Gunicorn
+RUN pip install gunicorn
+
 # Make port 80 available to the world outside this container
 EXPOSE 80
 
 # Define environment variable
+ENV FLASK_APP __init__.py
+ENV FLASK_RUN_HOST 0.0.0.0
 ENV NAME World
 
 # Run app.py when the container launches
-CMD ["gunicorn", "-b", "0.0.0.0:80", "nic_graham_site:app"]
+CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:80", "nicholas_graham:app"]
